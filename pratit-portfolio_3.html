@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratit Shrestha — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Pratit Shrestha</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- Portrait -->
+    <div class="hero-portrait hero-animate" id="heroPortrait" style="animation-delay:0.3s">
+      <div class="portrait-placeholder"><img src="images/about2.jpg" alt=""></div>
+    </div>
+
+    <!-- Name left side — z-index sits over bg, under portrait top but layered -->
+    <div class="hero-name-left hero-animate" style="animation-delay:0.1s; z-index:2;">
+      <span class="hero-name-first">Pratit</span>
+      <span class="hero-name-last">Shrestha</span>
+    </div>
+
+    <!-- UI/UX + Designer bottom -->
+    <div class="hero-title-row hero-animate" style="animation-delay:0.5s; z-index:4;">
+      <span class="hero-title-uiux">UI/UX</span>
+      <span class="hero-title-designer">Designer</span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint hero-animate" style="animation-delay:1.2s">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Adobe Illustrator</span>
+    <span class="marquee-item">Brand Development</span>
+    <span class="marquee-item">After Effects</span>
+    <span class="marquee-item">Adobe InDesign</span>
+    <span class="marquee-item">Adobe Premiere Pro</span>
+    <span class="marquee-item">Adobe Photoshop</span>
+    
+    <span class="marquee-item">Adobe Illustrator</span>
+    <span class="marquee-item">Brand Development</span>
+    <span class="marquee-item">After Effects</span>
+    <span class="marquee-item">Adobe InDesign</span>
+    <span class="marquee-item">Adobe Premiere Pro</span>
+    <span class="marquee-item">Adobe Photoshop</span>
+  </div>
+</div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="reveal">
+        <div class="section-label">About</div>
+        <div class="about-image-wrapper">
+          <img src="images/about.jpg" alt="About Pratit" class="about-img">
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="about-text reveal reveal-delay-1">
+          I'm a UI/UX designer based in Kathmandu with a deep commitment to crafting digital experiences that feel
+          inevitable — where every pixel, interaction, and moment of friction is considered.
+        </p>
+        <p class="about-text reveal reveal-delay-2">
+          My work lives at the intersection of research and intuition. I translate complex problems into elegant
+          solutions that put people first and push businesses forward.
+        </p>
+        <div class="about-stats reveal reveal-delay-3">
+          <div>
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Years</div>
+          </div>
+          <div>
+            <div class="stat-num">30+</div>
+            <div class="stat-label">Works</div>
+          </div>
+          <div>
+            <div class="stat-num">25+</div>
+            <div class="stat-label">Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="works" id="works">
+    <div class="works-header">
+      <div>
+        <div class="section-label reveal">Featured Works</div>
+        <h2 class="works-headline reveal reveal-delay-1">Case<br><em
+            style="font-style:italic; color:var(--accent)">Studies</em></h2>
+      </div>
+      <span class="works-count reveal">2022 — 2025</span>
+    </div>
+
+    <div class="works-grid">
+      <!-- Card 1 (large) -->
+      <div class="work-card reveal">
+        <div class="work-card-bg work-card-bg-1">
+          <div class="work-card-deco">
+            <div class="deco-circle"></div>
+            <div class="deco-rect"></div>
+          </div>
+        </div>
+        <div class="work-num">01</div>
+        <div class="work-card-info">
+          <div class="work-tag">Fintech · iOS · Android</div>
+          <div class="work-title">Apex Banking — Reimagining Personal Finance</div>
+          <p class="work-desc">A ground-up redesign of a digital banking platform serving 2M+ users. We reduced task
+            completion time by 40% and increased daily active usage by 3×.</p>
+          <span class="work-arrow">View Case Study</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="work-card reveal reveal-delay-1">
+        <div class="work-card-bg work-card-bg-2">
+          <div class="work-card-deco">
+            <div class="deco-circle"></div>
+            <div class="deco-rect"></div>
+          </div>
+        </div>
+        <div class="work-num">02</div>
+        <div class="work-card-info">
+          <div class="work-tag">E-commerce · Web</div>
+          <div class="work-title">Maison — Luxury Retail Experience</div>
+          <p class="work-desc">A bespoke e-commerce platform for a high-fashion brand. Conversion rate lifted 68% in the
+            first quarter post-launch.</p>
+          <span class="work-arrow">View Case Study</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="work-card reveal reveal-delay-2">
+        <div class="work-card-bg work-card-bg-3">
+          <div class="work-card-deco">
+            <div class="deco-circle"></div>
+            <div class="deco-rect"></div>
+          </div>
+        </div>
+        <div class="work-num">03</div>
+        <div class="work-card-info">
+          <div class="work-tag">SaaS · Dashboard</div>
+          <div class="work-title">Orbit Analytics — Data at Human Scale</div>
+          <p class="work-desc">Turning enterprise data complexity into a dashboard that anyone can navigate. Reduced
+            onboarding time from 3 weeks to 2 days.</p>
+          <span class="work-arrow">View Case Study</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="exp-inner">
+
+      <div class="exp-header reveal">
+        <div class="section-label">Career</div>
+        <h2 class="exp-title">
+          Work
+          <em>Experience</em>
+        </h2>
+      </div>
+
+      <div class="exp-list">
+
+        <!-- Entry 1 -->
+        <div class="exp-item reveal">
+          <div class="exp-duration">2024 — Present</div>
+          <div class="exp-main">
+            <span class="exp-role">Lead Product Designer</span>
+            <span class="exp-company">Verve Digital Studio</span>
+          </div>
+          <p class="exp-desc">Directing end-to-end design for a portfolio of 12 SaaS products. Established a design
+            system that cut production time by 55% and unified brand language across 4 product lines.</p>
+          <span class="exp-index">01</span>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="exp-item reveal reveal-delay-1">
+          <div class="exp-duration">2022 — 2024</div>
+          <div class="exp-main">
+            <span class="exp-role">Senior UX Designer</span>
+            <span class="exp-company">Meridian Fintech</span>
+          </div>
+          <p class="exp-desc">Owned the full redesign of a mobile banking app used by 2M+ customers. Improved task
+            completion rates by 40% and reduced user drop-off at onboarding by 62% through deep research and iterative
+            testing.</p>
+          <span class="exp-index">02</span>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="exp-item reveal reveal-delay-2">
+          <div class="exp-duration">2020 — 2022</div>
+          <div class="exp-main">
+            <span class="exp-role">UX/UI Designer</span>
+            <span class="exp-company">Atelier Creative Agency</span>
+          </div>
+          <p class="exp-desc">Crafted digital identities and web experiences for luxury and lifestyle brands across
+            Europe. Led client workshops and translated ambiguous briefs into precise, conversion-focused design
+            solutions.</p>
+          <span class="exp-index">03</span>
+        </div>
+
+        <!-- Entry 4 -->
+        <div class="exp-item reveal reveal-delay-3">
+          <div class="exp-duration">2018 — 2020</div>
+          <div class="exp-main">
+            <span class="exp-role">Product Design Intern → Designer</span>
+            <span class="exp-company">Kode Labs</span>
+          </div>
+          <p class="exp-desc">Joined as an intern and was promoted within 6 months. Shipped 8 features across a B2B
+            analytics platform and built the foundations of the company's first-ever component library.</p>
+          <span class="exp-index">04</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+
+    <!-- Ambient year watermark -->
+    <div class="edu-year-bg">2018</div>
+
+    <div class="edu-inner">
+
+      <div class="edu-header reveal">
+        <div class="section-label">Academic Background</div>
+        <div class="edu-title-wrap">
+          <span class="edu-title">Education</span>
+          <span class="edu-title-italic">& Learning</span>
+        </div>
+      </div>
+
+      <div class="edu-list">
+
+        <!-- Entry 1 -->
+        <div class="edu-item reveal">
+          <div class="edu-left">
+            <span class="edu-year-label">2020<br>—<br>2022</span>
+            
+          </div>
+          <div class="edu-right">
+            <span class="edu-degree">Master of Design,<br>Interaction Design</span>
+            <span class="edu-institution">Royal College of Art — London</span>
+            <p class="edu-focus">Specialized in human-centered interaction design with a thesis exploring how spatial
+              computing will reshape how people engage with financial interfaces. Graduated with Distinction.</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Interaction Design</span>
+              <span class="edu-tag">Spatial UX</span>
+              <span class="edu-tag">Research Methods</span>
+              <span class="edu-tag">Thesis</span>
+            </div>
+          </div>
+          <span class="edu-index">01</span>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="edu-item reveal reveal-delay-1">
+          <div class="edu-left">
+            <span class="edu-year-label">2016<br>—<br>2020</span>
+            
+          </div>
+          <div class="edu-right">
+            <span class="edu-degree">B.Des, Visual<br>Communication</span>
+            <span class="edu-institution">Kathmandu University — Nepal</span>
+            <p class="edu-focus">A rigorous foundation in visual systems, typography, brand identity, and communication
+              design. First-class honors. Recipient of the Dean's Award for Design Excellence in final year.</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Typography</span>
+              <span class="edu-tag">Brand Identity</span>
+              <span class="edu-tag">Visual Systems</span>
+              <span class="edu-tag">Honors</span>
+            </div>
+          </div>
+          <span class="edu-index">02</span>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="edu-item reveal reveal-delay-2">
+          <div class="edu-left">
+            <span class="edu-year-label">2023</span>
+            
+          </div>
+          <div class="edu-right">
+            <span class="edu-degree">Google UX Design<br>Professional Certificate</span>
+            <span class="edu-institution">Coursera · Google</span>
+            <p class="edu-focus">Advanced certification covering accessibility-first design practices, design sprint
+              facilitation, and prototyping at scale. Completed alongside full-time work in under 3 months.</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Accessibility</span>
+              <span class="edu-tag">Design Sprints</span>
+              <span class="edu-tag">Prototyping</span>
+            </div>
+          </div>
+          <span class="edu-index">03</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg-text">HELLO</div>
+    <div class="contact-inner">
+      <div class="section-label reveal" style="justify-content:center">Let's Work</div>
+      <h2 class="contact-headline reveal reveal-delay-1">
+        Got a<br><em>vision?</em>
+      </h2>
+      <p class="contact-sub reveal reveal-delay-2">Let's shape it into something unforgettable.</p>
+      <div class="reveal reveal-delay-3">
+        <a href="/cdn-cgi/l/email-protection#c5ada0a9a9aa85b5b7a4b1acb1b6adb7a0b6b1ada4eba6aaa8"
+          class="contact-email"><span class="__cf_email__"
+            data-cfemail="bdd5d8d1d1d2fdcdcfdcc9d4c9ced5cfd8cec9d5dc93ded2d0">[email&#160;protected]</span></a>
+      </div>
+      <div class="contact-socials reveal reveal-delay-4">
+        <a href="#">Behance</a>
+        <a href="#">Dribbble</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Pratit Shrestha</span>
+    <span>Based in Kathmandu, Nepal</span>
+    <span>Available for Projects</span>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
